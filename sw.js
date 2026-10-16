@@ -1,5 +1,5 @@
 // Cache-first with a background refresh: the game opens from the cache at once (offline too) and the next launch gets the new build.
-const CACHE = 'dcshield-0786ff362cf2';
+const CACHE = 'dcshield-c03733aeb43a';
 
 self.addEventListener('install', (e) => {
   e.waitUntil(caches.open(CACHE).then((c) => c.addAll(['./', 'index.html'])));
